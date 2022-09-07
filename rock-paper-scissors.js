@@ -10,7 +10,7 @@ const computerSelection = getComputerChoice();
 /*********************************************************************************************
 2. Store users input in a variable and make it case-insensitive 
  ********************************************************************************************/
-
+const userSelection = prompt('Enter rock, paper or scissors').toLocaleLowerCase();
 /*********************************************************************************************
 3. Write a function playRound() that plays single round of the game and take two parameters
    playerSelection and computerSelection and than returns a string that declares winner of
