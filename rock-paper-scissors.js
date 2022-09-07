@@ -1,21 +1,22 @@
 /*********************************************************************************************
 1. Create function getComputerChoice() that will randomly retrurn either rock, paper or scissors
 *********************************************************************************************/
-function getComputerChoice() {
-  const gameOptions = ['rock', 'paper', 'scissors'];
-  const computerSelected = gameOptions[Math.floor(Math.random() * gameOptions.length)];
-  return computerSelected;
-}
-const computerSelection = getComputerChoice();
-console.log(computerSelection);
+// function getComputerChoice() {
+//   const gameOptions = ['rock', 'paper', 'scissors'];
+//   const computerSelected = gameOptions[Math.floor(Math.random() * gameOptions.length)];
+//   return computerSelected;
+// }
+// const computerSelection = getComputerChoice();
+//console.log(computerSelection);
 /*********************************************************************************************
 2. Store users input in a variable and make it case-insensitive 
  ********************************************************************************************/
-const playerSelection = prompt('Enter rock, paper or scissors').toLowerCase();
+// const playerSelection = prompt('Enter rock, paper or scissors').toLowerCase();
 /*********************************************************************************************
 3. Write a function playRound() that plays single round of the game and take two parameters
    playerSelection and computerSelection and than returns a string that declares winner of
-   the round.
+   the round. Function should count score and keep it in variables after each round.
+   Declare two variables for that purpose userWon and computerWon.
 *********************************************************************************************/
 let userWon = 0;
 let computerWon = 0;
@@ -47,12 +48,38 @@ function playRound(playerSelection, computerSelection) {
     return 'You misstyped something... try again!';
   }
 }
-console.log(playRound(playerSelection, computerSelection));
+// console.log(playRound(playerSelection, computerSelection));
 /*********************************************************************************************
 4. Write a function game() that calls playRound() in its own body. playRound should be
-executed 5 times. It should keep score of every round (create a variables for users score and
-for computers score userWon and computerWon). It should report a winner at the end - create a
+executed 5 times. It should report a winner at the end - create a
 helper function with condition for win inside... winCondition(). Helper function is going to
 be called at the end of playRound(). Results should be displayed in console for now and the
 winner too.
 *********************************************************************************************/
+game();
+
+function game() {
+  while (userWon < 5 && computerWon < 5) {
+
+    function getComputerChoice() {
+      const gameOptions = ['rock', 'paper', 'scissors'];
+      const computerSelected = gameOptions[Math.floor(Math.random() * gameOptions.length)];
+      return computerSelected;
+    }
+    const computerSelection = getComputerChoice();
+
+    const playerSelection = prompt('Enter rock, paper or scissors').toLowerCase();
+
+    console.log(playRound(playerSelection, computerSelection));
+  }
+  console.log(winCondition());
+}
+
+function winCondition() {
+  if (userWon == 5) {
+    return 'You won! Congratulations';
+  } else if (computerWon == 5) {
+    return 'You lost! Computer has won.'
+  }
+}
+
