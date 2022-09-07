@@ -1,7 +1,12 @@
 /*********************************************************************************************
 1. Create function getComputerChoice() that will randomly retrurn either rock, paper or scissors
 *********************************************************************************************/
-
+function getComputerChoice() {
+  const gameOptions = ['rock', 'paper', 'scissors'];
+  const computerSelected = gameOptions[Math.floor(Math.random() * gameOptions.length)];
+  return computerSelected;
+}
+const computerSelection = getComputerChoice();
 /*********************************************************************************************
 2. Store users input in a variable and make it case-insensitive 
  ********************************************************************************************/
