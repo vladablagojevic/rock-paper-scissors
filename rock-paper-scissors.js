@@ -56,7 +56,7 @@ helper function with condition for win inside... winCondition(). Helper function
 be called at the end of playRound(). Results should be displayed in console for now and the
 winner too.
 *********************************************************************************************/
-game();
+// game();
 
 function game() {
   while (userWon < 5 && computerWon < 5) {
@@ -77,7 +77,7 @@ function game() {
 
 function winCondition() {
   if (userWon == 5) {
-    return 'You won! Congratulations';
+    return 'Bravooo... you won! Congratulations';
   } else if (computerWon == 5) {
     return 'You lost! Computer has won.'
   }
