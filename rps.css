@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  background: url('./images/rock-paper-scissors-neon-icons-vector.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #333;
+}
+
+button {
+  background-color: transparent;
+  border: 3px solid lightblue transparent;
+  border-radius: 4px;
+  color: transparent;
+  cursor: pointer;
+  padding: 30px;
+  margin: 0 0;
+  width: 500px;
+  height: 120px;
+}
+
+#buttons {
+  display: flex;
+  /* justify-content: start; */
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#results {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* flex-direction: column; */
+  font-size: 20px;
+  color: plum;
+  text-shadow: 2px 2px rebeccapurple;
+  margin-bottom: 380px;
+  padding: 20px;
+}
+
+#resetGame {
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+#reset {
+  color: yellow;
+  font-size: 24px;
+  text-shadow: 2px 2px royalblue
+}
+
+#gameScore,
+#userWon,
+#computerWon {
+  border: 2px solid cadetblue transparent;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}

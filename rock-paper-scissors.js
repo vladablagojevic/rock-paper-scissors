@@ -5,6 +5,7 @@ const userScore = document.querySelector('#userWon');
 const computerScore = document.querySelector('#computerWon');
 const gameScore = document.querySelector('#gameScore');
 const winner = document.querySelector('#winner');
+const reset = document.querySelector('#reset');
 let userWon = 0;
 let computerWon = 0;
 
@@ -24,9 +25,9 @@ function game(event) {
   const computerSelection = getComputerChoice();
   
   gameScore.innerText = playRound(playerSelection, computerSelection);
-  if (userWon === 5 || computerWon === 5) {
+  
+  if (userWon === 5 || computerWon === 5) 
     gameScore.innerText = winCondition();
-  }
   }
 
 function playRound(playerSelection, computerSelection) {
