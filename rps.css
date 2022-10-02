@@ -6,70 +6,100 @@
 
 body {
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: #333;
+  font-family: 'sofia', sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+  color: #eee;
   display: flex;
   flex-direction: column;
-  background: url('./images/rock-paper-scissors-neon-icons-vector.jpg'); 
+  background: url('./images/1eefc5567dc5c55f67ef6849b9235582.jpg'); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-color: #333;
 }
 
-button {
+#headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 150px;
+  font-size: 20px;
+}
+
+.gameButtons {
   background-color: transparent;
-  border: 3px solid lightblue transparent;
-  border-radius: 4px;
+  border-radius: 10px;
   color: transparent;
   cursor: pointer;
   padding: 30px;
-  margin: 0 0;
-  width: 500px;
-  height: 120px;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.gameButtons:hover {
+  /* transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2); */
+  box-shadow: 0 0.8em 0.8em -0.7em #ababab;
+  transform: translateY(-0.25em);
 }
 
 #buttons {
   display: flex;
-  /* justify-content: start; */
-  justify-content: space-around;
+  justify-content: center;
   padding: 20px;
-  margin-top: 0px;
 }
 
-#results {
+#results,
+#gameScore {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
-  font-size: 20px;
-  color: plum;
-  text-shadow: 2px 2px rebeccapurple;
-  margin-bottom: 380px;
+  flex-direction: column;
+  font-size: 30px;
   padding: 20px;
+}
+
+#gameScore {
+  font-size: 40px;
+}
+
+.results {
+  border: 1px solid #eee;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 #resetGame {
   display: flex;
   justify-content: center;
-  margin-top: 47px;
-  margin-bottom: 0px;
   padding: 20px;
 }
 
 #reset {
-  color: yellow;
-  font-size: 24px;
-  text-shadow: 2px 2px royalblue
+  background-color: transparent;
+  align-items: center;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  
 }
 
-#gameScore,
-#userWon,
-#computerWon {
-  border: 2px solid cadetblue transparent;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 5px;
+#reset:hover {
+  transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  box-shadow: 0 0.8em 0.8em -0.7em #ababab;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
 }

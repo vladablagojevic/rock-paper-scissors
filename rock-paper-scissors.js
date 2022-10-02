@@ -15,7 +15,7 @@ scissors.addEventListener('click', game);
 
 function game(event) {
   
-  let playerSelection = event.target.innerText.toLowerCase();
+  let playerSelection = event.target.id.toLowerCase();
 
   function getComputerChoice() {
     const gameOptions = ['rock', 'paper', 'scissors'];
