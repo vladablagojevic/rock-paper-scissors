@@ -6,12 +6,12 @@
 
 body {
   min-height: 100vh;
-  font-family: 'sofia', sans-serif;
-  text-shadow: 3px 3px 3px #ababab;
-  color: #eee;
+  font-family: 'silkscreen', sans-serif;
+  text-shadow: 3px 3px 3px violet;
+  color: yellow;
   display: flex;
   flex-direction: column;
-  background: url('./images/1eefc5567dc5c55f67ef6849b9235582.jpg'); 
+  background: url('./images/pexels-felix-mittermeier-956999.jpg'); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -43,7 +43,7 @@ body {
   /* transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2); */
-  box-shadow: 0 0.8em 0.8em -0.7em #ababab;
+  box-shadow: 0 0.8em 0.8em -0.7em yellow;
   transform: translateY(-0.25em);
 }
 
@@ -68,12 +68,31 @@ body {
 }
 
 .results {
-  border: 1px solid #eee;
-  width: 200px;
+  border: 1px solid green;
+  width: 280px;
   text-align: center;
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
+}
+
+#resultImages,
+#resultAreas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grogu {
+  width: 100px;
+  height: 100px;
+  margin-right: 120px;
+}
+
+#r2d2 {
+  width: 60px;
+  height: 60px;
+  margin-left: 80px;
 }
 
 #resetGame {
@@ -88,18 +107,17 @@ body {
   width: 150px;
   height: 100px;
   border-radius: 10px;
-  
 }
 
 #reset:hover {
   transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
-  box-shadow: 0 0.8em 0.8em -0.7em #ababab;
+  box-shadow: 0 0.8em 0.8em -0.8em violet;
 }
 
 img {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   pointer-events: none;
 }

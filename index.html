@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock-Paper-Scissors</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
   <link rel="stylesheet" href="rps.css">
   <script src="rock-paper-scissors.js" defer></script>
 </head>
@@ -15,9 +15,8 @@
     <h2>First to win 5 rounds wins ! ! !</h2>
   </div>
   
-
   <div id="resetGame">
-    <button id="reset" onclick="window.location.reload()"><img src="./images/reset-14.svg"></button>
+    <button id="reset" onclick="window.location.reload()"><img src="./images/reload.svg" alt="reset"></button>
   </div>
 
   <div id="buttons">
@@ -26,9 +25,15 @@
     <button id="scissors" class="gameButtons"><img src="./images/scissors.svg" alt="scissors"></button>
   </div>
 
-  <div id="results">  
-    <div id="userWon" class="results">You:</div>
-    <div id="computerWon" class="results">Computer:</div>
+  <div id="results">
+    <div id="resultImages">
+      <img src="./images/baby_yoda_head.svg" alt="baby yoda" id="grogu">
+      <img src="./images/r2d2.svg" alt="robot" id="r2d2">
+    </div>
+    <div id="resultAreas">
+      <div id="userWon" class="results">You:</div>
+      <div id="computerWon" class="results">Computer:</div>
+    </div>
   </div>
 
   <div id="gameScore">Result here:</div>
